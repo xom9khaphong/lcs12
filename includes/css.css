@@ -1,0 +1,204 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	font-size: 13px;
+	color: #3D4141;
+	overflow-x: hidden;
+}
+.hidden{display: none;}
+.fright 
+{
+	float: right;
+}
+.fleft 
+{
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background: #E3EFFF;
+}
+
+.bCorner {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.bMargin {
+	margin: 1px;
+}
+.bDefault {
+	border: 1px solid #608DC8;
+}
+
+.hMenu{
+	height: 30px;
+	background: url(../ui/ui-bg_gloss-wave.png) 50%;
+}
+.hMenu a 
+{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.hMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.hMenu ul li {
+	float: left;	
+	font-weight: bold;
+	line-height: 30px;
+	color: #fff;
+	padding: 0 20px;
+	border-right: 1px solid #608DC8;
+}
+
+.hMenu ul li ul 
+{
+	display: none;
+	position: absolute;
+	margin-left: -20px;
+	background: #86B5D9;
+	border: 1px solid #608DC8;
+}
+.hMenu ul li:hover ul 
+{
+	display: block;
+}
+.hMenu ul li ul li 
+{
+	border: none;
+	display: block;
+	clear: both;
+	width: 180px;
+	border-bottom: 1px solid #608DC8;
+}
+.hMenu ul li ul li:hover
+{
+	background: #6EA7D1;
+}
+.panel {
+	height: 100px;
+	background: #E2F1F9 url(../ui/bgpanel.png) no-repeat;
+}
+
+.nameHR {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.leftpanel {
+	float: left;
+	width: 25%;
+}
+
+.rightpanel {
+	float: right;
+	width: 72%;
+}
+
+.title {
+	background: url(../ui/ui-bg_gloss-wave.png) bottom;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.overlist {
+	height: 400px;
+	overflow: auto;
+}
+table.listHR {
+	border: 0;
+	width: 100%;
+	background: #fff;
+}
+
+table.listHR tr:hover {
+	background: #E3EFFF;	
+	cursor: pointer;
+}
+
+table.listHR tr td {
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	padding-left: 3px;
+	border-bottom: 1px solid #D2E6FF;
+}
+table.listHR tr td.idhr {
+	width: 70px;
+}
+.searchBox {
+	font-size: 11px;
+	line-height: 20px;
+	padding-bottom: 5px;
+}
+.searchBox div {
+	margin-top: 3px;
+}
+.searchBox input, select {
+	border: 1px solid #608DC8;
+	height: 18px;
+	width: 140px;
+	font-size: 11px;
+}
+.searchBox input[type="submit"] {
+	height: 22px;
+	width: 50px;
+	float: right;
+	background: #87B6D9;
+}
+.labelsearch {
+	width: 70px;
+	float: left;
+	padding-left: 3px;
+	clear: left;
+}
+
+.fieldsearch {
+	width: 185px;
+	float: left;
+}
+
+
+.footer {
+	height: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 22px;
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 1px;
+	background: url(../ui/ui-bg_gloss-wave.png) 50%;
+}
+
+#panel1 table.chitiet {
+	width: 100%;
+	font-size: 9pt; 
+	font-family: Arial;
+	padding: 5px;
+}
+
+
+#panel1 table.chitiet td.label {
+	width: 150px;
+}
+
+.tendangnhap 
+{
+	color: #333;
+	margin-left: 5px;
+}

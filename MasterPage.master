@@ -1,0 +1,63 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_i6s8pmzs" %>
+
+<%@ Register assembly="DevExpress.Web.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxNavBar" tagprefix="dxnb" %>
+<%@ Register assembly="DevExpress.Web.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxMenu" tagprefix="dxm" %>
+
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v9.1, Version=9.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dxe" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="includes/css.css" />
+    <link rel="Stylesheet" type="text/css" href="includes/bootstrap.min.css" />
+    
+    
+    <script type="text/javascript" src="includes/jquery-1.10.1.min.js"></script>
+    
+    
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<div class="hMenu">
+	<ul>
+		<li><a href="Default.aspx">Trang chủ</a></li>
+		<li id="idDanhmuc" class="cl_hidden" runat="server" onPreRender="Paragraph_PreRender"><a href="frmHome.aspx">Danh mục</a>
+		    <ul>
+		        <li><a href="Phongban.aspx">Phòng ban</a></li>
+		        <li><a href="Chucvu.aspx">Chức vụ</a></li>
+		        <li><a href="Trinhdochinhtri.aspx">Trình độ chính trị</a></li>
+		        <li><a href="Ngoaingu.aspx">Ngoại ngữ</a></li>
+		    </ul>
+		</li>
+		<li runat="server" onPreRender="Paragraph_PreRender">Nhân viên
+		    <ul>
+		        <li><a href="Nhanvien.aspx">Thêm nhân viên</a></li>
+		        <li><a href="Danhsach.aspx">Danh sách nhân viên</a></li>
+		    </ul>
+		</li>
+		<li runat="server" onPreRender="Paragraph_PreRender"><a href="Bangluong.aspx">Bảng lương</a></li>
+		<li><a href="Timkiem.aspx">Tìm kiếm</a></li>
+		<li runat="server" onPreRender="Paragraph_PreRender">Thống kê</li>
+		<li runat="server" onPreRender="Paragraph_PreRender">Báo cáo</li>
+		<li>Xin chào: <label id="login_name" runat="server" class="tendangnhap">User</label></li>
+		<li><a href="Doimatkhau.aspx">Đổi mật khẩu</a></li>
+		<li><a href="Thoat.aspx">Thoát</a></li>
+	</ul>
+</div>
+<div class="panel bCorner bDefault bMargin">
+	<div class="nameHR">
+	    <asp:ContentPlaceHolder id="TitleContent" runat="server" />
+    </div>
+</div>
+
+<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+
+    
+<div class="container bDefault bCorner footer">
+    Chương trình quản lý nhân sự - Bản quyền thuộc Võ Thị Nhàn @2014
+</div>
+
+</body>
+</html>
